@@ -17,6 +17,7 @@ function App() {
   const [username, setUsername] = useState("");
   const [solvedProblems, setSolvedProblems] = useState(new Set());
   const [fetchingUser, setFetchingUser] = useState(false);
+  const [error, setError] = useState(null);
 
   const lastRequestTime = useRef(0);
   const requestDelay = 1500;
@@ -115,6 +116,11 @@ function App() {
         });
 
         setSolvedProblems(solvedSet);
+        setError(null);
+      }
+      else{
+        setSolvedProblems(new Set());
+        setError("User not found");
       }
     } 
     catch (error) {
@@ -146,6 +152,12 @@ function App() {
               placeholder="username"
               className="border border-gray-300 rounded-lg px-4 py-2 w-64 text-center focus:outline-none focus:ring-2 focus:ring-black transition"
             />
+
+            {error && (
+              <div className="text-red-500 text-center mt-4 font-medium">
+                {error}
+              </div>
+            )}
 
             <button
               onClick={fetchUserSubmissions}
