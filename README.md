@@ -1,20 +1,28 @@
-<<<<<<< HEAD
-# React + Vite
+# 📌 Contest Upsolve Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web-based tool that helps competitive programmers explore recent Codeforces contests and track problems they need to upsolve.
 
-Currently, two official plugins are available:
+The platform works both:
+- With a Codeforces handle (personalized tracking)
+- Without a handle (browse recent contest problems)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Browse recent contest problems even without entering a handle  
+- Enter Codeforces username for handle-based tracking  
+- Fetch recent contest data using Codeforces API  
+- Display recent contests sorted division-wise (Div 1, Div 2, Div 3, etc.)  
+- Show **all problems** from recent contests  
+- Highlight problems solved by the entered user    
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# CF-Contest-Upsolve-Tracker
->>>>>>> 57aac1b5b4df604e24e4676e322a187da2d42cb3
+## Running Locally
+
+Clone the repository:
+
+```bash
+git clone https://github.com/prisha1118/CF-Contest-Upsolve-Tracker.git
+cd contest-upsolve-tracker
