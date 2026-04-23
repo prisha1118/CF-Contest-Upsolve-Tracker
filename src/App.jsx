@@ -83,13 +83,17 @@ function App() {
 
     if (!contestProblems[id]) {
       const res = await fetch(
-        `https://codeforces.com/api/contest.standings?contestId=${id}&from=1&count=1`
+        `https://codeforces.com/api/problemset.problems`
       );
       const data = await res.json();
 
+      const filtered = data.result.problems.filter(
+        problem => problem.contestId === id
+      );
+
       setContestProblems((prev) => ({
         ...prev,
-        [id]: data.result.problems,
+        [id]: filtered,
       }));
     }
   };
