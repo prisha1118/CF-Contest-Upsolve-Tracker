@@ -1,4 +1,4 @@
-# 📌 Contest Upsolve Tracker
+#  Contest Deck - Codeforces Contest Upsolve Tracker
 
 A web-based tool that helps competitive programmers explore recent Codeforces contests and track problems they need to upsolve.
 
